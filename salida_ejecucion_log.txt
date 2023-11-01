@@ -1,0 +1,2 @@
+Nivel del log : WARNING, Hora: 2023-11-01 12:40:52,424,ubicacion en codigo: funcName __call__, mensaje : ERROR GRAVE DE INGRESO DE DATOS EN LA FUNCION> ingresar_datos con EXCEPTION > el valor *a* no es un una operacion valida 
+Nivel del log : INFO, Hora: 2023-11-01 12:40:56,247,ubicacion en codigo: funcName __call__, mensaje : operacion exitosa de la operacion> 2 + 3  
