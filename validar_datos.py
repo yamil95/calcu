@@ -1,12 +1,10 @@
+from logger_config import loger
+
+
+
+
 def chequear_operacion ():
-    """_summary_
 
-    Raises:
-        TypeError: _description_
-
-    Returns:
-        _type_: _description_
-    """
     operaciones_disponibles = ["+","-","/","*"]
     operacion = input (">>>")
     
@@ -16,15 +14,7 @@ def chequear_operacion ():
         return operacion
 
 def chequear_numeros ():
-    """_summary_
 
-    Raises:
-        ValueError: _description_
-
-    Returns:
-        _type_: _description_
-    """
-        
     try:
         numero_1 = int (input ("ingrese un numero>"))
         numero_2 = int (input ("ingrese un numero>"))
@@ -33,17 +23,9 @@ def chequear_numeros ():
         raise ValueError ("los valores deben ser del tipo numerico")
              
         
-    
+@loger 
 def ingresar_datos ():
-    """_summary_
 
-    Raises:
-        e: _description_
-
-    Returns:
-        _type_: _description_
-    """
-    
     
     try :
 
