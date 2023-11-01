@@ -3,6 +3,7 @@
 from calculadora import Calculadora
 import os
 import time
+import copy
 
 def imprimir_menu():
     print("#" * 40)
@@ -14,16 +15,34 @@ def imprimir_menu():
     print("# 4. ingrese el simbolo / para sumar")
     print("#" * 40)
 
-
-def ingresar_datos ():
+def chequear_operacion ():
     operaciones_disponibles = ["+","-","/","*"]
-    lambda x : x if operacion in operaciones_disponibles else 0
+    operacion = input (">>>")
+    operacion_copy = copy.deepcopy(operacion)
+    
+    if operacion not in operaciones_disponibles:
+            operacion = None
+            raise TypeError(f"el valor *{operacion_copy}* no es un una operacion valida ")
+    else:
+        return operacion
+
+def chequear_numeros ():
+        try:
+            numero_1 = int (input ("ingrese un numero"))
+            numero_2 = int (input ("ingrese un numero"))
+            return numero_1,numero_2
+        except Exception as e:
+            raise ValueError("los valores ingresados deben ser del tipo numerico")
+        
+    
+def ingresar_datos ():
+    
+    
     try :
-        operacion = input (">>>")
+
+        operacion = chequear_operacion()
         print ("#######puede ingresar hasta 2 numeros########")
-        numero_1 = int (input ("ingrese un numero"))
-        numero_2 = int (input ("ingrese un numero"))
-        if operacion not in operaciones_disponibles: operacion = None
+        numero_1,numero_2 = chequear_numeros()
         return operacion,numero_1,numero_2
     
     except Exception as e:
