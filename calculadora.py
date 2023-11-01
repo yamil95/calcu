@@ -1,5 +1,6 @@
 class Calculadora:
-    
+    """_summary_
+    """
     def __init__(self) -> None:
         
         self.__operaciones = {"+": lambda  a,b: a+b,
@@ -9,8 +10,6 @@ class Calculadora:
                     }   
     
     def operar (self,operacion : str , numero_1:int ,numero_2:int )->int:
-        try :
-            resultado = self.__operaciones[operacion](numero_1,numero_2)
-            return resultado
-        except Exception as e:
-            raise Exception(f"la clave {operacion} no existe")
+        resultado = self.__operaciones[operacion](numero_1,numero_2)
+        return resultado
+            
