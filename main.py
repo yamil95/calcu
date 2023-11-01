@@ -1,9 +1,8 @@
 
-
 from calculadora import Calculadora
+from validar_datos import *
 import os
 import time
-from validar_datos import *
 
 def imprimir_menu():
     print("#" * 40)
@@ -15,7 +14,6 @@ def imprimir_menu():
     print("# 4. ingrese el simbolo / para sumar")
     print("# 5. para salir ingrese cero a continuacion de >>>")
     print("#" * 40)
-
 
 
 
@@ -32,13 +30,13 @@ if __name__ == '__main__':
         try:
             operacion,numero_1,numero_2 = ingresar_datos()
             resultado = calculadora_x.operar(operacion,numero_1,numero_2)
-            print (f"Resultado = {resultado}")
+            print (f"resultado de la operacion {numero_1} {operacion} {numero_2} = {resultado}")
             time.sleep(2)
             os.system("clear")
             imprimir_menu()
         except Exception as e :
             if "0" in list (e.args[0]):break
-            print (f"ocurrio un error del tipo : {e.args[0]}")
+            
 
 
     

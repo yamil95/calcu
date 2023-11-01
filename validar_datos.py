@@ -3,6 +3,8 @@ from logger_config import loger
 
 
 
+
+
 def chequear_operacion ():
 
     operaciones_disponibles = ["+","-","/","*"]
