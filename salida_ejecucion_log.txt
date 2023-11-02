@@ -1,17 +1,12 @@
-Nivel del log : INFO, Hora: 2023-11-02 02:15:20,010,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_operacion> con parametros () 
-Nivel del log : WARNING, Hora: 2023-11-02 02:15:24,044,ubicacion en codigo: funcName __call__, mensaje : ERROR GRAVE DE INGRESO DE DATOS EN LA FUNCION> chequear_operacion con EXCEPTION > el valor *a* no es un una operacion valida 
-Nivel del log : INFO, Hora: 2023-11-02 02:15:24,044,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_operacion> con parametros () 
-Nivel del log : INFO, Hora: 2023-11-02 02:15:26,916,ubicacion en codigo: funcName __call__, mensaje : ejecucion exitosa de la funcion chequear_operacion
-Nivel del log : INFO, Hora: 2023-11-02 02:15:26,917,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_numeros> con parametros () 
-Nivel del log : WARNING, Hora: 2023-11-02 02:15:31,189,ubicacion en codigo: funcName __call__, mensaje : ERROR GRAVE DE INGRESO DE DATOS EN LA FUNCION> chequear_numeros con EXCEPTION > los valores deben ser del tipo numerico
-Nivel del log : INFO, Hora: 2023-11-02 02:15:31,189,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_operacion> con parametros () 
-Nivel del log : INFO, Hora: 2023-11-02 02:15:43,584,ubicacion en codigo: funcName __call__, mensaje : ejecucion exitosa de la funcion chequear_operacion
-Nivel del log : INFO, Hora: 2023-11-02 02:15:43,584,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_numeros> con parametros () 
-Nivel del log : INFO, Hora: 2023-11-02 02:15:51,893,ubicacion en codigo: funcName __call__, mensaje : ejecucion exitosa de la funcion chequear_numeros
-Nivel del log : INFO, Hora: 2023-11-02 02:15:53,899,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_operacion> con parametros () 
-Nivel del log : INFO, Hora: 2023-11-02 02:17:07,488,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_operacion> con parametros () 
-Nivel del log : INFO, Hora: 2023-11-02 02:17:16,145,ubicacion en codigo: funcName __call__, mensaje : ejecucion exitosa de la funcion chequear_operacion
-Nivel del log : INFO, Hora: 2023-11-02 02:17:16,145,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_numeros> con parametros () 
-Nivel del log : INFO, Hora: 2023-11-02 02:17:19,031,ubicacion en codigo: funcName __call__, mensaje : ejecucion exitosa de la funcion chequear_numeros
-Nivel del log : INFO, Hora: 2023-11-02 02:17:21,036,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_operacion> con parametros () 
-Nivel del log : WARNING, Hora: 2023-11-02 02:17:26,026,ubicacion en codigo: funcName __call__, mensaje : ERROR GRAVE DE INGRESO DE DATOS EN LA FUNCION> chequear_operacion con EXCEPTION > el valor *0* no es un una operacion valida 
+Nivel del log : INFO, Hora: 2023-11-02 10:01:17,478,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_operacion>  
+Nivel del log : INFO, Hora: 2023-11-02 10:01:21,220,ubicacion en codigo: funcName __call__, mensaje : ejecucion exitosa de la funcion chequear_operacion ()
+Nivel del log : INFO, Hora: 2023-11-02 10:01:21,220,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_numeros>  
+Nivel del log : WARNING, Hora: 2023-11-02 10:01:24,101,ubicacion en codigo: funcName __call__, mensaje : ERROR GRAVE DE INGRESO DE DATOS EN LA FUNCION> chequear_numeros> Tipo de evento > los valores deben ser del tipo numerico
+Nivel del log : INFO, Hora: 2023-11-02 10:01:24,102,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_operacion>  
+Nivel del log : INFO, Hora: 2023-11-02 10:01:31,730,ubicacion en codigo: funcName __call__, mensaje : ejecucion exitosa de la funcion chequear_operacion ()
+Nivel del log : INFO, Hora: 2023-11-02 10:01:31,731,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_numeros>  
+Nivel del log : INFO, Hora: 2023-11-02 10:01:33,765,ubicacion en codigo: funcName __call__, mensaje : ejecucion exitosa de la funcion chequear_numeros ()
+Nivel del log : INFO, Hora: 2023-11-02 10:01:33,765,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion imprimir_resultado>  
+Nivel del log : INFO, Hora: 2023-11-02 10:01:35,770,ubicacion en codigo: funcName __call__, mensaje : ejecucion exitosa de la funcion imprimir_resultado 2 + 3 = 5
+Nivel del log : INFO, Hora: 2023-11-02 10:01:35,770,ubicacion en codigo: funcName __call__, mensaje : Realizando ejecucion de funcion chequear_operacion>  
+Nivel del log : WARNING, Hora: 2023-11-02 10:01:37,909,ubicacion en codigo: funcName __call__, mensaje : EJECUCION FINALIZADA> chequear_operacion> Tipo de evento > ejecucion finalizada del programa.

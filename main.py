@@ -1,7 +1,5 @@
 #from calculadora import Calculadora
-from validar_datos import *
-import os
-import time
+from validaciones_y_muestreos import *
 from calculadora import Calculadora
 
 def imprimir_menu():
@@ -16,12 +14,11 @@ def imprimir_menu():
     print("#" * 40)
 
 
+
 if __name__ == '__main__':
     
     imprimir_menu()
     calculadora_x = Calculadora()
-   
-    
     operacion= None
     numero_1 = None
     numero_2 = None
@@ -32,13 +29,11 @@ if __name__ == '__main__':
             
             operacion,numero_1,numero_2 = ingresar_datos()
             resultado = calculadora_x.operar(operacion,numero_1,numero_2)
-            print (f"resultado de la operacion {numero_1} {operacion} {numero_2} = {resultado}")
-            time.sleep(2)
-            os.system("clear")
+            imprimir_resultado(operacion,numero_1,numero_2,resultado)
             imprimir_menu()
             
         except Exception as e :
-            if "0" in list (e.args[0]):break
+            if "." in list (e.args[0]):break
             
 
 
