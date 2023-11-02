@@ -34,17 +34,19 @@ class loger :
     
     def __call__(self, *args: Any, **kwds: Any) -> Any:
         
-        
+        validar_parametros = lambda x: f"{x[1]} {x[0]} {x[2]} = {x[3]}" if len (x)>3 else x
+        validar = validar_parametros(args)
         
         try:
-            self.logger.info (f"Realizando ejecucion de funcion {self.func.__name__}> con parametros {args} ")
+            self.logger.info (f"Realizando ejecucion de funcion {self.func.__name__}>  ")
             valor = self.func (*args,**kwds)
-            self.logger.info (f"ejecucion exitosa de la funcion {self.func.__name__}")
+            self.logger.info (f"ejecucion exitosa de la funcion {self.func.__name__} {validar}")
             
             return valor
 
         except Exception as e:
-            self.logger.warning(f"ERROR GRAVE DE INGRESO DE DATOS EN LA FUNCION> {self.func.__name__} con EXCEPTION > {e.args[0]}")
+            validar_fin = lambda x: "EJECUCION FINALIZADA" if "." in list (x[0]) else "ERROR GRAVE DE INGRESO DE DATOS EN LA FUNCION"
+            self.logger.warning(f"{validar_fin(e.args)}> {self.func.__name__}> Tipo de evento > {e.args[0]}")
             raise
         
         

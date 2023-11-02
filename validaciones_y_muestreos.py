@@ -1,4 +1,13 @@
 from logger_config import loger
+import os
+import time
+
+@loger
+def imprimir_resultado (operacion:str,numero_1:int,numero_2:int,resultado:int):
+        
+        print (f"resultado de la operacion {numero_1} {operacion} {numero_2} = {resultado}")
+        time.sleep(2)
+        os.system("clear")
 
 @loger
 def chequear_operacion ():
@@ -6,8 +15,9 @@ def chequear_operacion ():
     operaciones_disponibles = ["+","-","/","*"]
     operacion = input (">>>")
     
-    if operacion not in operaciones_disponibles:
+    if operacion not in operaciones_disponibles and operacion != "0":
             raise TypeError(f"el valor *{operacion}* no es un una operacion valida ")
+    if operacion == "0": raise Exception ("ejecucion finalizada del programa.")
     else:
         return operacion
 @loger

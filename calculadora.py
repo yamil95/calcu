@@ -1,4 +1,4 @@
-from logger_config import loger
+
 class Calculadora:
     """ 
     proposito: Esta clase se encarga de realizar operacion aritmeticas basicas tales como 
