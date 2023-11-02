@@ -1,10 +1,6 @@
 from logger_config import loger
 
-
-
-
-
-
+@loger
 def chequear_operacion ():
 
     operaciones_disponibles = ["+","-","/","*"]
@@ -14,7 +10,7 @@ def chequear_operacion ():
             raise TypeError(f"el valor *{operacion}* no es un una operacion valida ")
     else:
         return operacion
-
+@loger
 def chequear_numeros ():
 
     try:
@@ -24,10 +20,8 @@ def chequear_numeros ():
     except:
         raise ValueError ("los valores deben ser del tipo numerico")
              
-        
-@loger 
-def ingresar_datos ():
 
+def ingresar_datos ():
     
     try :
 
@@ -38,3 +32,6 @@ def ingresar_datos ():
     
     except Exception as e:
         raise e
+    
+
+            
