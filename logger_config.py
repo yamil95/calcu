@@ -3,10 +3,7 @@ from typing import Any
 from typing import Callable
 import functools
 
-
 class loger :
-    
-    
     """ 
     proposito : La clase loger se encargara de decorar aquellas funciones que necesiten ser controladas tanto en si su ejecucion fue exitosa como fallida
     en este caso la configuracion del loger se hara de forma tal que se va a generar un archivo "salida_ejecucion_log.txt" donde se almacenaran los logs de warning
@@ -40,7 +37,7 @@ class loger :
         try:
             self.logger.info (f"Realizando ejecucion de funcion {self.func.__name__}>  ")
             valor = self.func (*args,**kwds)
-            self.logger.info (f"ejecucion exitosa de la funcion {self.func.__name__} {validar}")
+            self.logger.info (f"ejecucion exitosa de la funcion > {self.func.__name__} > {validar}")
             
             return valor
 
